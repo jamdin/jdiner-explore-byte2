@@ -10,7 +10,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 10;
 }
 article,
 aside,
@@ -60,6 +60,10 @@ dfn {
   font-style: italic;
 }
 h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+h2 {
   margin: .67em 0;
   font-size: 2em;
 }

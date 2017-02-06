@@ -45,8 +45,14 @@
       
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Data Pipeline Project Exploratory Analysis Byte Example</h1>
-        <p>This is the Exploratory Analysis Byte of the Data Pipeline class.</p>
+	<h1>Game of Thrones Characters Death Analysis</h1>
+        <p>One of the main themes surrounding Game of Thrones is death. There are no rules in the seven kingdoms and anyone can die at any moment or, as the show says, "Valar Morghulis" ("All men must die").</p>
+
+        <p>Taking this into consideration we want to know, based on the data of all the characters on the show, which group is more likely to die and what is the life expectancy in Westeros.</p>
+
+        <p>For this analysis we use the following dataset available on Kaggle that was imported into Google Fusion Tables: https://www.kaggle.com/mylesoneill/game-of-thrones</p>
+
+        <p>The analysis is based on the book series, NOT the TV series. The first 10 rows of the dataset are shown below.</p>
       </div>
       
       <div class="page-header">
@@ -55,9 +61,6 @@
     </div> <!-- /container -->
     
     <div class="button-toolbar" role="toolbar" id="headers" name="headers">
-      {% for column in allheaders %}
-      <button type="button" class = "btn-space btn btn-info" id="{{column}}" onclick="updateTable('{{column}}')">{{column}}</button>
-      {% endfor %}
     </div>
     
     <div class="table-responsive">
@@ -81,6 +84,15 @@
 	   </table>
 	</div> 
 
+	<h2>
+				Analysis per Allegiance
+			</h2>
+			<p>
+				There are 11 houses in the Game of Thrones universe, each one with their own characteristics and political interests. There is another category called 'None' that corresponds to characters that don't have an allegiance to any of the houses. The purpose of this analysis is to see if some houses have suffered more casualties than others based on the total number of casualties.
+
+				The following graph shows how many characters are on each house and how many have died during the series.
+			</p>
+			<center><img alt="Allegiance Analysis" src="../plots/DeathsAllegiance.png" /></center>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
