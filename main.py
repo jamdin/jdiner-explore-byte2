@@ -1,12 +1,3 @@
-"""`main` is the top level module for your Flask application."""
-
-# Data Exploration Byte Version 1
-# 
-# Copyright 1/2016 Jennifer Mankoff
-#
-# Licensed under GPL v3 (http://www.gnu.org/licenses/gpl.html)
-#
-
 # Imports
 import os
 import jinja2
@@ -24,7 +15,6 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     autoescape=True)
 
 # This API key is provided by google as described in the tutorial
-API_KEY2 = 'AIzaSyCuKKwcT5mUYZP_Q-heqCPjvdWyacRuX00'
 API_KEY = 'AIzaSyDOHHGMoCwdyC0owPNuiFc8TmOfsa6jkKo'
 
 # This uses discovery to create an object that can talk to the 
@@ -32,7 +22,6 @@ API_KEY = 'AIzaSyDOHHGMoCwdyC0owPNuiFc8TmOfsa6jkKo'
 service = build('fusiontables', 'v1', developerKey=API_KEY)
 
 # This is the table id for the fusion table
-TABLE_ID_nikola = '1QVga82_gzEViomBJui9q4A5SFj9EXDfdEMjSZDsD'
 TABLE_ID = '1y8W-YaQn3hrI4TZxp67k5INA50eYedJiw02JwgVR'
 
 # This is the default columns for the query

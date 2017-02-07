@@ -232,6 +232,9 @@ th {
   img {
     max-width: 100% !important;
   }
+  .imgContainer{
+    float:left;
+  }
   p,
   h2,
   h3 {
@@ -242,6 +245,15 @@ th {
   h3 {
     page-break-after: avoid;
   }
+
+  .right
+
+{float: right; }
+
+.left
+
+{float: left; }
+  
   .navbar {
     display: none;
   }
